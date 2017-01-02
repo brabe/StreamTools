@@ -40,5 +40,10 @@ namespace StreamingSetupV2
             Process.Start(Properties.Settings.Default.ExportDirectory);
 
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
