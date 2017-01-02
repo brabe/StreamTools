@@ -52,16 +52,15 @@ namespace StreamingSetupV2
             Properties.Settings.Default.LiveScoreXML = livescoreXMLDir.Text;
             Properties.Settings.Default.ExportDirectory = outputDirTextBox.Text;
 
+            Properties.Settings.Default.Save();
+
             this.Close();
         }
 
         private void resetButton_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.LiveScoreXML = "C:/StreamTools/livescore.xml";
-            Properties.Settings.Default.ExportDirectory = "C:/StreamTools";
-
-            livescoreXMLDir.Text = Properties.Settings.Default.LiveScoreXML;
-            outputDirTextBox.Text = Properties.Settings.Default.ExportDirectory;
+            livescoreXMLDir.Text = "C:/StreamTools/livescore.xml";
+            outputDirTextBox.Text = "C:/StreamTools";
         }
     }
 }
