@@ -34,5 +34,10 @@ namespace StreamingSetupV2
             SettingsPane frm = new SettingsPane();
             frm.Show();
         }
+
+        private void outputDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start(Properties.Settings.Default.ExportDirectory);
+        }
     }
 }

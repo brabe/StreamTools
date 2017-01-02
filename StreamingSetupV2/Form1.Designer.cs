@@ -28,15 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.outputDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.liveScoreInfo1 = new StreamingSetupV2.LiveScoreInfo();
             this.halftimeCountdown1 = new StreamingSetupV2.HalftimeCountdown();
             this.startingSoonCountdown1 = new StreamingSetupV2.StartingSoonCountdown();
             this.StartingSoonCountdownControl = new StreamingSetupV2.StartingSoonCountdown();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.outputDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.settingsToolStripMenuItem,
+            this.outputDirectoryToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(798, 24);
+            this.menuStrip1.TabIndex = 12;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
+            // 
+            // outputDirectoryToolStripMenuItem
+            // 
+            this.outputDirectoryToolStripMenuItem.Name = "outputDirectoryToolStripMenuItem";
+            this.outputDirectoryToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
+            this.outputDirectoryToolStripMenuItem.Text = "Output Directory";
+            this.outputDirectoryToolStripMenuItem.Click += new System.EventHandler(this.outputDirectoryToolStripMenuItem_Click);
             // 
             // liveScoreInfo1
             // 
@@ -73,30 +98,6 @@
             this.StartingSoonCountdownControl.Name = "StartingSoonCountdownControl";
             this.StartingSoonCountdownControl.Size = new System.Drawing.Size(383, 192);
             this.StartingSoonCountdownControl.TabIndex = 0;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.settingsToolStripMenuItem,
-            this.outputDirectoryToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(798, 24);
-            this.menuStrip1.TabIndex = 12;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // settingsToolStripMenuItem
-            // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.settingsToolStripMenuItem.Text = "Settings";
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
-            // 
-            // outputDirectoryToolStripMenuItem
-            // 
-            this.outputDirectoryToolStripMenuItem.Name = "outputDirectoryToolStripMenuItem";
-            this.outputDirectoryToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
-            this.outputDirectoryToolStripMenuItem.Text = "Output Directory";
             // 
             // Form1
             // 
