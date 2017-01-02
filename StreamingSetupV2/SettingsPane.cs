@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StreamingSetupV2
 {
-    public partial class LiveStreamControls : Form
+    public partial class SettingsPane : Form
     {
-        public LiveStreamControls()
+        public SettingsPane()
         {
             InitializeComponent();
         }

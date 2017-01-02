@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using Timers = System.Timers;
+using System.Timers;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +20,8 @@ namespace StreamingSetupV2
 {
     public partial class Form1 : Form
     {
+
+        string ExportDirectory2 = Properties.Settings.Default.ExportDirectory;
         string LiveScoreFileBase = "c://StreamTools/LiveScore";
         string LiveScoreFileHome = "c://StreamTools/LiveScore/Home";
         string LiveScoreFileAway = "c://StreamTools/LiveScore/Away";
@@ -393,39 +395,11 @@ namespace StreamingSetupV2
             File.WriteAllText(@LiveScoreFileBase + "/livescore_game_period.txt", GamePeriod.Text);
             File.WriteAllText(@LiveScoreFileBase + "/livescore_game_time.txt", GameTime.Text);
             File.WriteAllText(@LiveScoreFileBase + "/livescore_game_shotclock.txt", GameShotClock.Text);
-
-
         }
 
+        private void startingSoonCountdown1_Load(object sender, EventArgs e)
+        {
 
-        //SelfPromotion
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://youtube.com/STJTigerTV");
-        }
-
-        // OpenYouTubeDashboard
-        private void youtubeDashboardButton_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://www.youtube.com/dashboard");
-        }
-        // OpenOutputDirectory
-        private void openOutputDirectoryButton_Click(object sender, EventArgs e)
-        {
-            Process.Start(exportDirectory);
-        }
-
-        // Set Always on Top
-        private void AlwaysOnTopCheck_CheckedChanged(object sender, EventArgs e)
-        {
-            if (AlwaysOnTopCheck.Checked == true)
-            {
-                Form1.ActiveForm.TopMost = true;
-            }
-            if (AlwaysOnTopCheck.Checked == false)
-            {
-                Form1.ActiveForm.TopMost = false;
-            }
         }
     }
 }
