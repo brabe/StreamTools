@@ -48,11 +48,10 @@
             this.HomeTimeouts = new System.Windows.Forms.TextBox();
             this.HomeBonus = new System.Windows.Forms.TextBox();
             this.HomeFouls = new System.Windows.Forms.TextBox();
-            this.halftimeTimer = new System.Windows.Forms.Timer(this.components);
             this.livescoreupdate = new System.Windows.Forms.Timer(this.components);
-            this.StartingSoonCountdownControl = new StreamingSetupV2.StartingSoonCountdown();
-            this.startingSoonCountdown1 = new StreamingSetupV2.StartingSoonCountdown();
             this.halftimeCountdown1 = new StreamingSetupV2.HalftimeCountdown();
+            this.startingSoonCountdown1 = new StreamingSetupV2.StartingSoonCountdown();
+            this.StartingSoonCountdownControl = new StreamingSetupV2.StartingSoonCountdown();
             this.LiveScoreGroupBox.SuspendLayout();
             this.TableLayoutPanel3.SuspendLayout();
             this.LiveScoreLeftTableLayout.SuspendLayout();
@@ -299,23 +298,19 @@
             this.HomeFouls.TabIndex = 2;
             this.HomeFouls.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // halftimeTimer
-            // 
-            this.halftimeTimer.Interval = 1000;
-            // 
             // livescoreupdate
             // 
             this.livescoreupdate.Interval = 1000;
             this.livescoreupdate.Tick += new System.EventHandler(this.livescoreupdate_Tick);
             // 
-            // StartingSoonCountdownControl
+            // halftimeCountdown1
             // 
-            this.StartingSoonCountdownControl.AutoSize = true;
-            this.StartingSoonCountdownControl.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.StartingSoonCountdownControl.Location = new System.Drawing.Point(0, 0);
-            this.StartingSoonCountdownControl.Name = "StartingSoonCountdownControl";
-            this.StartingSoonCountdownControl.Size = new System.Drawing.Size(383, 192);
-            this.StartingSoonCountdownControl.TabIndex = 0;
+            this.halftimeCountdown1.AutoSize = true;
+            this.halftimeCountdown1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.halftimeCountdown1.Location = new System.Drawing.Point(12, 215);
+            this.halftimeCountdown1.Name = "halftimeCountdown1";
+            this.halftimeCountdown1.Size = new System.Drawing.Size(384, 194);
+            this.halftimeCountdown1.TabIndex = 10;
             // 
             // startingSoonCountdown1
             // 
@@ -326,14 +321,14 @@
             this.startingSoonCountdown1.Size = new System.Drawing.Size(384, 194);
             this.startingSoonCountdown1.TabIndex = 9;
             // 
-            // halftimeCountdown1
+            // StartingSoonCountdownControl
             // 
-            this.halftimeCountdown1.AutoSize = true;
-            this.halftimeCountdown1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.halftimeCountdown1.Location = new System.Drawing.Point(12, 215);
-            this.halftimeCountdown1.Name = "halftimeCountdown1";
-            this.halftimeCountdown1.Size = new System.Drawing.Size(384, 194);
-            this.halftimeCountdown1.TabIndex = 10;
+            this.StartingSoonCountdownControl.AutoSize = true;
+            this.StartingSoonCountdownControl.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.StartingSoonCountdownControl.Location = new System.Drawing.Point(0, 0);
+            this.StartingSoonCountdownControl.Name = "StartingSoonCountdownControl";
+            this.StartingSoonCountdownControl.Size = new System.Drawing.Size(383, 192);
+            this.StartingSoonCountdownControl.TabIndex = 0;
             // 
             // Form1
             // 
@@ -374,7 +369,6 @@
         internal System.Windows.Forms.TextBox AwayBonus;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.Label Label2;
-        private System.Windows.Forms.Timer halftimeTimer;
         private System.Windows.Forms.Timer livescoreupdate;
         internal System.Windows.Forms.TextBox AwayFouls;
         private System.Windows.Forms.Label GameTime;
