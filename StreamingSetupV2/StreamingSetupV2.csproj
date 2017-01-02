@@ -168,12 +168,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Profile Pic.png" />
-    <None Include="Resources\Youtube Cover.png" />
-    <None Include="Resources\Facebook Cover.png" />
-    <None Include="Resources\Twitter Cover.png" />
-    <None Include="Resources\Wide.png" />
-    <Content Include="Wide.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
