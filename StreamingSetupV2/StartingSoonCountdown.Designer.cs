@@ -273,9 +273,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Controls.Add(this.StartGroupBox);
             this.Name = "StartingSoonCountdown";
-            this.Size = new System.Drawing.Size(383, 192);
+            this.Size = new System.Drawing.Size(384, 194);
             this.StartGroupBox.ResumeLayout(false);
             this.StartTableLayout.ResumeLayout(false);
             this.StartTableLayout.PerformLayout();

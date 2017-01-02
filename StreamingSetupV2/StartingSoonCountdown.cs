@@ -16,6 +16,10 @@ namespace StreamingSetupV2
         public StartingSoonCountdown()
         {
             InitializeComponent();
+            
+            // Creating the StartingCountdown Directory
+            Directory.CreateDirectory(Properties.Settings.Default.ExportDirectory + "/StartingCountdown");
+
         }
 
         //  Starting/Pausing/Stopping - Starting Soon Countdown
