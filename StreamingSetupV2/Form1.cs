@@ -43,7 +43,7 @@ namespace StreamingSetupV2
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
     }
 }
