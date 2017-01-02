@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="ExportDirectory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C://StreamTools</Value>
+      <Value Profile="(Default)">C:/StreamTools</Value>
     </Setting>
     <Setting Name="LiveScoreXML" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C://StreamTools/livescore.xml</Value>
+      <Value Profile="(Default)">C:/StreamTools/livescore.xml</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -25,7 +25,7 @@ namespace StreamingSetupV2.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C://StreamTools")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:/StreamTools")]
         public string ExportDirectory {
             get {
                 return ((string)(this["ExportDirectory"]));
@@ -37,7 +37,7 @@ namespace StreamingSetupV2.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C://StreamTools/livescore.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:/StreamTools/livescore.xml")]
         public string LiveScoreXML {
             get {
                 return ((string)(this["LiveScoreXML"]));

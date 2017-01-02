@@ -29,15 +29,16 @@ namespace StreamingSetupV2
             Directory.CreateDirectory(Properties.Settings.Default.ExportDirectory);
         }
 
-        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void settingsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SettingsPane frm = new SettingsPane();
             frm.Show();
         }
 
-        private void outputDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
+        private void openOutputDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start(Properties.Settings.Default.ExportDirectory);
+
         }
     }
 }
