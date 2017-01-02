@@ -95,6 +95,12 @@
     <Compile Include="HalftimeCountdown.Designer.cs">
       <DependentUpon>HalftimeCountdown.cs</DependentUpon>
     </Compile>
+    <Compile Include="LiveScoreInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LiveScoreInfo.Designer.cs">
+      <DependentUpon>LiveScoreInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettingsPane.cs">
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HalftimeCountdown.resx">
       <DependentUpon>HalftimeCountdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LiveScoreInfo.resx">
+      <DependentUpon>LiveScoreInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
