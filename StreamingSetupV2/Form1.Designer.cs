@@ -50,7 +50,7 @@
             this.editToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(798, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1311, 24);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -80,7 +80,7 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
@@ -102,7 +102,7 @@
             // 
             this.liveScoreInfo1.AutoSize = true;
             this.liveScoreInfo1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.liveScoreInfo1.Location = new System.Drawing.Point(395, 27);
+            this.liveScoreInfo1.Location = new System.Drawing.Point(787, 27);
             this.liveScoreInfo1.Name = "liveScoreInfo1";
             this.liveScoreInfo1.Size = new System.Drawing.Size(401, 264);
             this.liveScoreInfo1.TabIndex = 11;
@@ -111,7 +111,7 @@
             // 
             this.halftimeCountdown1.AutoSize = true;
             this.halftimeCountdown1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.halftimeCountdown1.Location = new System.Drawing.Point(5, 222);
+            this.halftimeCountdown1.Location = new System.Drawing.Point(395, 27);
             this.halftimeCountdown1.Name = "halftimeCountdown1";
             this.halftimeCountdown1.Size = new System.Drawing.Size(384, 194);
             this.halftimeCountdown1.TabIndex = 10;
@@ -141,18 +141,20 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(798, 424);
+            this.ClientSize = new System.Drawing.Size(1311, 507);
             this.Controls.Add(this.liveScoreInfo1);
             this.Controls.Add(this.halftimeCountdown1);
             this.Controls.Add(this.startingSoonCountdown1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Stream Tools";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

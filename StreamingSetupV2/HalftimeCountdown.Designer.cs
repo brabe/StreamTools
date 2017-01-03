@@ -302,11 +302,11 @@
         internal System.Windows.Forms.TextBox HalftimeMsgTextBox;
         internal System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         internal System.Windows.Forms.Button HalftimeResetButton;
-        private System.Windows.Forms.Button HalfTimeStartButton2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.NumericUpDown HalfTimeH;
         private System.Windows.Forms.NumericUpDown HalfTimeM;
         private System.Windows.Forms.NumericUpDown HalfTimeS;
         private System.Windows.Forms.Timer halftimeTimer;
+        internal System.Windows.Forms.Button HalfTimeStartButton2;
     }
 }

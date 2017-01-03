@@ -13,6 +13,8 @@ namespace StreamingSetupV2
         {
             InitializeComponent();
 
+            this.ActiveControl = menuStrip1;
+
             //Create the main export directory
             Directory.CreateDirectory(Properties.Settings.Default.ExportDirectory);
         }
@@ -32,6 +34,37 @@ namespace StreamingSetupV2
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode.ToString() == "Q")
+            {
+                startingSoonCountdown1.StartStartButton.PerformClick();
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+
+            if (e.Control && e.KeyCode.ToString() == "W")
+            {
+                startingSoonCountdown1.StartResetButton.PerformClick();
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+
+            if (e.Control && e.KeyCode.ToString() == "A")
+            {
+                halftimeCountdown1.HalfTimeStartButton2.PerformClick();
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+
+            if (e.Control && e.KeyCode.ToString() == "S")
+            {
+                halftimeCountdown1.HalftimeResetButton.PerformClick();
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }

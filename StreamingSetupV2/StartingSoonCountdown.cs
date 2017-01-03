@@ -151,6 +151,5 @@ namespace StreamingSetupV2
                 File.WriteAllText(@StartingCountdownFile + "/starting-countdown.txt", StartMsgTextBox.Text);
             }
         }
-
     }
 }
