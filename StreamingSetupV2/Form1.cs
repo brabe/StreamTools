@@ -52,14 +52,14 @@ namespace StreamingSetupV2
                 e.SuppressKeyPress = true;
             }
 
-            if (e.Control && e.KeyCode.ToString() == "A")
+            if (e.Control && e.KeyCode.ToString() == "E")
             {
                 halftimeCountdown1.HalfTimeStartButton2.PerformClick();
                 e.Handled = true;
                 e.SuppressKeyPress = true;
             }
 
-            if (e.Control && e.KeyCode.ToString() == "S")
+            if (e.Control && e.KeyCode.ToString() == "R")
             {
                 halftimeCountdown1.HalftimeResetButton.PerformClick();
                 e.Handled = true;
