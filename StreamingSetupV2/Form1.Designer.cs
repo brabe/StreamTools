@@ -94,7 +94,7 @@
             // settingsToolStripMenuItem1
             // 
             this.settingsToolStripMenuItem1.Name = "settingsToolStripMenuItem1";
-            this.settingsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.settingsToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
             this.settingsToolStripMenuItem1.Text = "Settings";
             this.settingsToolStripMenuItem1.Click += new System.EventHandler(this.settingsToolStripMenuItem1_Click);
             // 
@@ -102,7 +102,7 @@
             // 
             this.liveScoreInfo1.AutoSize = true;
             this.liveScoreInfo1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.liveScoreInfo1.Location = new System.Drawing.Point(394, 27);
+            this.liveScoreInfo1.Location = new System.Drawing.Point(395, 27);
             this.liveScoreInfo1.Name = "liveScoreInfo1";
             this.liveScoreInfo1.Size = new System.Drawing.Size(401, 264);
             this.liveScoreInfo1.TabIndex = 11;
