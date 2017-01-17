@@ -35,7 +35,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.liveScoreInfo1 = new StreamingSetupV2.LiveScoreInfo();
+            this.liveScoreAlternative1 = new StreamingSetupV2.LiveScoreAlternative();
             this.halftimeCountdown1 = new StreamingSetupV2.HalftimeCountdown();
             this.startingSoonCountdown1 = new StreamingSetupV2.StartingSoonCountdown();
             this.StartingSoonCountdownControl = new StreamingSetupV2.StartingSoonCountdown();
@@ -50,7 +50,7 @@
             this.editToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1311, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1390, 24);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,14 +98,13 @@
             this.settingsToolStripMenuItem1.Text = "Settings";
             this.settingsToolStripMenuItem1.Click += new System.EventHandler(this.settingsToolStripMenuItem1_Click);
             // 
-            // liveScoreInfo1
+            // liveScoreAlternative1
             // 
-            this.liveScoreInfo1.AutoSize = true;
-            this.liveScoreInfo1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.liveScoreInfo1.Location = new System.Drawing.Point(787, 27);
-            this.liveScoreInfo1.Name = "liveScoreInfo1";
-            this.liveScoreInfo1.Size = new System.Drawing.Size(401, 264);
-            this.liveScoreInfo1.TabIndex = 11;
+            this.liveScoreAlternative1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.liveScoreAlternative1.Location = new System.Drawing.Point(788, 27);
+            this.liveScoreAlternative1.Name = "liveScoreAlternative1";
+            this.liveScoreAlternative1.Size = new System.Drawing.Size(602, 407);
+            this.liveScoreAlternative1.TabIndex = 13;
             // 
             // halftimeCountdown1
             // 
@@ -141,8 +140,8 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1311, 507);
-            this.Controls.Add(this.liveScoreInfo1);
+            this.ClientSize = new System.Drawing.Size(1390, 472);
+            this.Controls.Add(this.liveScoreAlternative1);
             this.Controls.Add(this.halftimeCountdown1);
             this.Controls.Add(this.startingSoonCountdown1);
             this.Controls.Add(this.menuStrip1);
@@ -168,7 +167,6 @@
         private HalftimeCountdown HalftimeCountdownControl;
         private StartingSoonCountdown startingSoonCountdown1;
         private HalftimeCountdown halftimeCountdown1;
-        private LiveScoreInfo liveScoreInfo1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
@@ -176,6 +174,7 @@
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem openOutputDirectoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private LiveScoreAlternative liveScoreAlternative1;
     }
 }
 

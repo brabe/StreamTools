@@ -114,6 +114,7 @@
             this.StartOutputFormatTextBox.Name = "StartOutputFormatTextBox";
             this.StartOutputFormatTextBox.Size = new System.Drawing.Size(266, 20);
             this.StartOutputFormatTextBox.TabIndex = 2;
+            this.StartOutputFormatTextBox.TabStop = false;
             this.StartOutputFormatTextBox.Text = "$m minute(s) and $s second(s)";
             this.StartOutputFormatTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -153,6 +154,7 @@
             this.StartLiveOutputTextBox.ReadOnly = true;
             this.StartLiveOutputTextBox.Size = new System.Drawing.Size(266, 20);
             this.StartLiveOutputTextBox.TabIndex = 2;
+            this.StartLiveOutputTextBox.TabStop = false;
             this.StartLiveOutputTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // StartMsgLabel
@@ -176,6 +178,7 @@
             this.StartMsgTextBox.Name = "StartMsgTextBox";
             this.StartMsgTextBox.Size = new System.Drawing.Size(266, 20);
             this.StartMsgTextBox.TabIndex = 2;
+            this.StartMsgTextBox.TabStop = false;
             this.StartMsgTextBox.Text = "Stream to Begin Shortly";
             this.StartMsgTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -199,6 +202,7 @@
             this.StartResetButton.Name = "StartResetButton";
             this.StartResetButton.Size = new System.Drawing.Size(88, 25);
             this.StartResetButton.TabIndex = 1;
+            this.StartResetButton.TabStop = false;
             this.StartResetButton.Text = "Reset";
             this.StartResetButton.UseVisualStyleBackColor = true;
             this.StartResetButton.Click += new System.EventHandler(this.StartResetButton_Click);
@@ -210,6 +214,7 @@
             this.StartStartButton.Name = "StartStartButton";
             this.StartStartButton.Size = new System.Drawing.Size(166, 25);
             this.StartStartButton.TabIndex = 0;
+            this.StartStartButton.TabStop = false;
             this.StartStartButton.Text = "Start";
             this.StartStartButton.UseVisualStyleBackColor = true;
             this.StartStartButton.Click += new System.EventHandler(this.StartStartButton_Click);
@@ -236,6 +241,7 @@
             this.StartTimeH.Name = "StartTimeH";
             this.StartTimeH.Size = new System.Drawing.Size(82, 20);
             this.StartTimeH.TabIndex = 0;
+            this.StartTimeH.TabStop = false;
             this.StartTimeH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // StartTimeM
@@ -244,6 +250,7 @@
             this.StartTimeM.Name = "StartTimeM";
             this.StartTimeM.Size = new System.Drawing.Size(82, 20);
             this.StartTimeM.TabIndex = 0;
+            this.StartTimeM.TabStop = false;
             this.StartTimeM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.StartTimeM.Value = new decimal(new int[] {
             15,
@@ -257,6 +264,7 @@
             this.StartTimeS.Name = "StartTimeS";
             this.StartTimeS.Size = new System.Drawing.Size(84, 20);
             this.StartTimeS.TabIndex = 0;
+            this.StartTimeS.TabStop = false;
             this.StartTimeS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.StartTimeS.Value = new decimal(new int[] {
             1,

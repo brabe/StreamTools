@@ -297,7 +297,6 @@
             // 
             // livescoreupdate
             // 
-            this.livescoreupdate.Enabled = true;
             this.livescoreupdate.Interval = 1000;
             this.livescoreupdate.Tick += new System.EventHandler(this.livescoreupdate_Tick);
             // 

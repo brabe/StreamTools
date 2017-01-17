@@ -114,6 +114,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(266, 20);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TabStop = false;
             this.textBox1.Text = "$m minute(s) and $s second(s)";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -153,6 +154,7 @@
             this.HalftimeLiveOutputTextBox.ReadOnly = true;
             this.HalftimeLiveOutputTextBox.Size = new System.Drawing.Size(266, 20);
             this.HalftimeLiveOutputTextBox.TabIndex = 2;
+            this.HalftimeLiveOutputTextBox.TabStop = false;
             this.HalftimeLiveOutputTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -176,6 +178,7 @@
             this.HalftimeMsgTextBox.Name = "HalftimeMsgTextBox";
             this.HalftimeMsgTextBox.Size = new System.Drawing.Size(266, 20);
             this.HalftimeMsgTextBox.TabIndex = 2;
+            this.HalftimeMsgTextBox.TabStop = false;
             this.HalftimeMsgTextBox.Text = "Stream to Resume Shortly";
             this.HalftimeMsgTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -199,6 +202,7 @@
             this.HalftimeResetButton.Name = "HalftimeResetButton";
             this.HalftimeResetButton.Size = new System.Drawing.Size(88, 25);
             this.HalftimeResetButton.TabIndex = 1;
+            this.HalftimeResetButton.TabStop = false;
             this.HalftimeResetButton.Text = "Reset";
             this.HalftimeResetButton.UseVisualStyleBackColor = true;
             this.HalftimeResetButton.Click += new System.EventHandler(this.HalftimeResetButton_Click);
@@ -209,6 +213,7 @@
             this.HalfTimeStartButton2.Name = "HalfTimeStartButton2";
             this.HalfTimeStartButton2.Size = new System.Drawing.Size(166, 25);
             this.HalfTimeStartButton2.TabIndex = 2;
+            this.HalfTimeStartButton2.TabStop = false;
             this.HalfTimeStartButton2.Text = "Start";
             this.HalfTimeStartButton2.UseVisualStyleBackColor = true;
             this.HalfTimeStartButton2.Click += new System.EventHandler(this.HalfTimeStartButton2_Click);
@@ -235,6 +240,7 @@
             this.HalfTimeH.Name = "HalfTimeH";
             this.HalfTimeH.Size = new System.Drawing.Size(82, 20);
             this.HalfTimeH.TabIndex = 0;
+            this.HalfTimeH.TabStop = false;
             this.HalfTimeH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // HalfTimeM
@@ -243,6 +249,7 @@
             this.HalfTimeM.Name = "HalfTimeM";
             this.HalfTimeM.Size = new System.Drawing.Size(82, 20);
             this.HalfTimeM.TabIndex = 0;
+            this.HalfTimeM.TabStop = false;
             this.HalfTimeM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.HalfTimeM.Value = new decimal(new int[] {
             12,
@@ -256,6 +263,7 @@
             this.HalfTimeS.Name = "HalfTimeS";
             this.HalfTimeS.Size = new System.Drawing.Size(84, 20);
             this.HalfTimeS.TabIndex = 0;
+            this.HalfTimeS.TabStop = false;
             this.HalfTimeS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.HalfTimeS.Value = new decimal(new int[] {
             1,

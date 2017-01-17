@@ -27,8 +27,8 @@
     <ProductName>Stream Tools</ProductName>
     <PublisherName>Brent Rabe</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>1.1.0.1</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.2.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -106,6 +106,12 @@
     <Compile Include="HalftimeCountdown.Designer.cs">
       <DependentUpon>HalftimeCountdown.cs</DependentUpon>
     </Compile>
+    <Compile Include="LiveScoreAlternative.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LiveScoreAlternative.Designer.cs">
+      <DependentUpon>LiveScoreAlternative.cs</DependentUpon>
+    </Compile>
     <Compile Include="LiveScoreInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HalftimeCountdown.resx">
       <DependentUpon>HalftimeCountdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LiveScoreAlternative.resx">
+      <DependentUpon>LiveScoreAlternative.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LiveScoreInfo.resx">
       <DependentUpon>LiveScoreInfo.cs</DependentUpon>

@@ -46,5 +46,65 @@ namespace StreamingSetupV2.Properties {
                 this["LiveScoreXML"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal LeftScore {
+            get {
+                return ((decimal)(this["LeftScore"]));
+            }
+            set {
+                this["LeftScore"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal RightScore {
+            get {
+                return ((decimal)(this["RightScore"]));
+            }
+            set {
+                this["RightScore"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LeftName {
+            get {
+                return ((string)(this["LeftName"]));
+            }
+            set {
+                this["LeftName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string RightName {
+            get {
+                return ((string)(this["RightName"]));
+            }
+            set {
+                this["RightName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int KeyboardStatus {
+            get {
+                return ((int)(this["KeyboardStatus"]));
+            }
+            set {
+                this["KeyboardStatus"] = value;
+            }
+        }
     }
 }
