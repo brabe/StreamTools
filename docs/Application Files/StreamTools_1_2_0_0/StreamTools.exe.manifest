@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="StreamTools.exe" version="1.2.0.0" publicKeyToken="80897eb781e7cfbe" language="en" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="StreamTools" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="StreamTools.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="521216">
+      <assemblyIdentity name="Newtonsoft.Json" version="8.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>pxPak1priJ2uuVQcJHuP5s1NzcMXy4Zijb95yNL0d48=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SpotifyAPI.dll" size="130560">
+      <assemblyIdentity name="SpotifyAPI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>r3fLTzVnCgs+eaNGbXTMbIwAAz4P1/x5zv4ZCYevX/Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StreamTools.exe" size="58328">
+      <assemblyIdentity name="StreamTools" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>00Q1vCn0IsPLwBfSHH1ZrO6izIdg6713mRdxUU+uwhs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="StreamTools.exe.config" size="1696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RSnscyOi3EKU0cm58MCx+VFTWQlVpfurCF6T4aYcnSs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on and is
+           is designed to work with. Uncomment the appropriate elements and Windows will 
+           automatically selected the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-BRENT\Brent" issuerKeyHash="f2667c180bcc4edd2c97b5ca86adc2258fcfe57a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>gkkFG6EgBVzpcfI8VyUxDMGx4t15r7rm2LDOfCP5A+A=</DigestValue></Reference></SignedInfo><SignatureValue>AEiluDfCCEyxodYE5jA0KLvkJ1S8wXALRPR36jak5Ktz5mw1yVqNdY85LDvetwzSyr21cVC1/Y9FVXOPGCraeks64f0P4/nffap9EwfSdhd8a6Xd9mxb1gsXoaknoOfUtOImwoDs+L3kQFMIwU/gnNhx3ExPoe7TohJGVtClso0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>5wN2V8kCKC+vqYsu+wikAg5XT+wEL0+BdpLkDbO3RuWTmjshMPcOKaMm03A2LJWx/ywO7m+bIB/HDvQx1ORQ+TWTAF0TZ3hqn91E6otMhhjSzrwAgADTR3AF3+jm4pZKO0U0Lhdaz96LP3gcd9g/mbs7cP8aPjv4MHd1x/Xa9N8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e003f9237cceb0d8e6baaf79dde2b1c10c3125573cf271e95c0520a11b054982" Description="" Url=""><as:assemblyIdentity name="StreamTools.exe" version="1.2.0.0" publicKeyToken="80897eb781e7cfbe" language="en" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-BRENT\Brent</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>dH7xrTky+ErmBhB777rJwT6ZAH3Y0VR7zLmZaL4Nxwo=</DigestValue></Reference></SignedInfo><SignatureValue>huIljIegW12ADw/4yI8zvnPGRForkXpQ2okLP2YKSrlU07jlVStKUAtfAv0JlAvQZfgow3JhqHfwp1E7tQ7xU2wTlWmnXB2dZJ6jAWjwu3CUj+mTvH2LQlW0XVF2A4nqS6bHWQHXCAqkRa05DV07Lp1OJznD/PJKFdb7njMvuzw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>5wN2V8kCKC+vqYsu+wikAg5XT+wEL0+BdpLkDbO3RuWTmjshMPcOKaMm03A2LJWx/ywO7m+bIB/HDvQx1ORQ+TWTAF0TZ3hqn91E6otMhhjSzrwAgADTR3AF3+jm4pZKO0U0Lhdaz96LP3gcd9g/mbs7cP8aPjv4MHd1x/Xa9N8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQd1Sb+dz2wqpKspxGZKsB/zANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtAEIAUgBFAE4AVABcAEIAcgBlAG4AdDAeFw0xNjExMjcwODQ1MDFaFw0xNzExMjcxNDQ1MDFaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0AQgBSAEUATgBUAFwAQgByAGUAbgB0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDnA3ZXyQIoL6+piy77CKQCDldP7AQvT4F2kuQNs7dG5ZOaOyEw9w4poybTcDYslbH/LA7ub5sgH8cO9DHU5FD5NZMAXRNneGqf3UTqi0yGGNLOvACAANNHcAXf6Obilko7RTQuF1rP3os/eBx32D+Zuztw/xo+O/gwd3XH9dr03wIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAEFbbq6q3lBVrnwTTHBAk2f1qYAr/GkO/8NrOBmcMJpiUGmwmfUE8fKiHD2lWvmtk7ExybyPMirkC6WkdAZmfhkWPHL0KHXFxB8RnN5CNqQTRwDV3h7oqGXUg6mVTuby8Pj8ESt6yHmNYuchWzPflKQtjkxtU5G7i8fNKE+yWL6e</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
