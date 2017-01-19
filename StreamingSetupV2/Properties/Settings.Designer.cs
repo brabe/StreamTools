@@ -106,5 +106,41 @@ namespace StreamingSetupV2.Properties {
                 this["KeyboardStatus"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("8")]
+        public decimal scoreTimeM {
+            get {
+                return ((decimal)(this["scoreTimeM"]));
+            }
+            set {
+                this["scoreTimeM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal scoreTimeS {
+            get {
+                return ((decimal)(this["scoreTimeS"]));
+            }
+            set {
+                this["scoreTimeS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int scorePeriodState {
+            get {
+                return ((int)(this["scorePeriodState"]));
+            }
+            set {
+                this["scorePeriodState"] = value;
+            }
+        }
     }
 }

@@ -40,13 +40,14 @@ namespace StreamingSetupV2
         
         // Variables
         string ScoreboardExport = Properties.Settings.Default.ExportDirectory + "/ScoreboardExport";
-        int mTimeClock;
-        int sTimeClock;
-        string mmTimeClock;
-        string ssTimeClock;
+        internal int mTimeClock;
+        internal int sTimeClock;
+        internal string mmTimeClock;
+        internal string ssTimeClock;
+
         int ClockPause = 1;
 
-        int periodState = 1;
+        internal int periodState = 1;
         
         // TimeClock Timer
         private void timeClock_Tick(object sender, EventArgs e)
@@ -59,13 +60,20 @@ namespace StreamingSetupV2
                 sTimeClock = 59;
             }
 
-            if (mTimeClock == -1)
+            writeFile();
+
+            if (mTimeClock == 0 & sTimeClock == 0)
             {
-                mTimeClock = 59;
+                timeClock.Stop();
             }
 
-            string mmTimeClock = Convert.ToString(mTimeClock);
-            string ssTimeClock = Convert.ToString(sTimeClock);
+        }
+
+        // Write TimeClock File
+        internal void writeFile()
+        {
+            mmTimeClock = Convert.ToString(mTimeClock);
+            ssTimeClock = Convert.ToString(sTimeClock);
 
             if (mTimeClock < 10)
             {
@@ -88,7 +96,6 @@ namespace StreamingSetupV2
             TimeClockS.Value = sTimeClock;
 
             File.WriteAllText(@ScoreboardExport + "/GameTime.txt", GameTime.Text);
-
         }
 
         // TimeClock Start/Stop
@@ -99,6 +106,8 @@ namespace StreamingSetupV2
                 timeClock.Start();
                 mTimeClock = Convert.ToInt32(TimeClockM.Value);
                 sTimeClock = Convert.ToInt32(TimeClockS.Value);
+
+                writeFile();
 
                 ClockPause = 4;
             }
@@ -117,6 +126,8 @@ namespace StreamingSetupV2
                 timeClock.Start();
                 mTimeClock = Convert.ToInt32(TimeClockM.Value);
                 sTimeClock = Convert.ToInt32(TimeClockS.Value);
+
+                writeFile();
 
                 ClockPause = 2;
             }
@@ -139,27 +150,9 @@ namespace StreamingSetupV2
 
             ClockPause = 1;
 
-            string mmTimeClock = Convert.ToString(mTimeClock);
-            string ssTimeClock = Convert.ToString(sTimeClock);
+            writeFile();
 
-            if (mTimeClock < 10)
-            {
-                mmTimeClock = "0" + Convert.ToString(mTimeClock);
-            }
-
-            if (sTimeClock < 10)
-            {
-                ssTimeClock = "0" + Convert.ToString(sTimeClock);
-            }
-
-            string desiredOutput = "$m:$s";
-
-            string correctString1 = desiredOutput.Replace("$m", mmTimeClock);
-            string correctString2 = correctString1.Replace("$s", ssTimeClock);
-
-            GameTime.Text = correctString2;
-
-            File.WriteAllText(@ScoreboardExport + "/GameTime.txt", GameTime.Text);
+            //File.WriteAllText(@ScoreboardExport + "/GameTime.txt", GameTime.Text);
 
         }
 
@@ -190,7 +183,7 @@ namespace StreamingSetupV2
         }
 
         // Period Update
-        private void updatePeriod()
+        internal void updatePeriod()
         {
             if (periodState == 1)
             {
@@ -219,46 +212,6 @@ namespace StreamingSetupV2
 
             File.WriteAllText(@ScoreboardExport + "/GamePeriod.txt", GamePeriod.Text);
 
-        }
-
-        // Adjusting Seconds +1 
-        private void button17_Click(object sender, EventArgs e)
-        {
-            timeClock.Stop();
-
-            sTimeClock = sTimeClock + 2;
-
-            timeClock.Start();            
-        }
-
-        // Adjusting Seconds -1
-        private void button18_Click(object sender, EventArgs e)
-        {
-            timeClock.Stop();
-
-            sTimeClock = sTimeClock - 1;
-
-            timeClock.Start();
-        }
-
-        // Adjusting Minutes +1
-        private void button15_Click(object sender, EventArgs e)
-        {
-            timeClock.Stop();
-
-            mTimeClock = mTimeClock + 1;
-
-            timeClock.Start();
-        }
-
-        // Adjusting Minutes -1
-        private void button16_Click(object sender, EventArgs e)
-        {
-            timeClock.Stop();
-
-            mTimeClock = mTimeClock - 1;
-
-            timeClock.Start();
         }
 
         // Away Name Changed (Left)
@@ -507,6 +460,21 @@ namespace StreamingSetupV2
             rightScoreText.Value = rightScoreText.Value - rightScoreText.Value;
 
             leftScoreText.Value = leftScoreText.Value - leftScoreText.Value;
+
+            timeClock.Stop();
+
+            sTimeClock = 0;
+            mTimeClock = 8;
+
+            TimeClockM.Value = 8;
+            TimeClockS.Value = 0;
+
+            periodState = 1;
+
+            updatePeriod();
+            scoreUpdate();
+            writeFile();
         }
+
     }
 }

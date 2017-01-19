@@ -44,6 +44,9 @@ namespace StreamingSetupV2
                 sStart = Convert.ToInt32(StartTimeS.Value);
 
                 StartStartButton.Text = "Pause";
+
+                writeFile();
+
                 StartingPause = 4;
             }
 
@@ -55,8 +58,8 @@ namespace StreamingSetupV2
                 StartTimeS.Value = Convert.ToDecimal(sStart);
 
                 StartStartButton.Text = "Resume";
-                StartingPause = 3;
 
+                StartingPause = 3;
             }
 
             if (StartingPause == 1)
@@ -67,6 +70,9 @@ namespace StreamingSetupV2
                 sStart = Convert.ToInt32(StartTimeS.Value);
 
                 StartStartButton.Text = "Pause";
+
+                writeFile();
+
                 StartingPause = 2;
             }
 
@@ -82,13 +88,15 @@ namespace StreamingSetupV2
             startingSoonTimer.Stop();
             hStart = 0;
             mStart = 15;
-            sStart = 1;
+            sStart = 0;
 
             StartTimeH.Value = Convert.ToDecimal(hStart);
             StartTimeM.Value = Convert.ToDecimal(mStart);
             StartTimeS.Value = Convert.ToDecimal(sStart);
 
             StartLiveOutputTextBox.Text = "";
+
+            File.WriteAllText(@StartingCountdownFile + "/starting-countdown.txt", StartLiveOutputTextBox.Text);
 
             StartStartButton.Text = "Start";
             StartingPause = 1;
@@ -111,9 +119,14 @@ namespace StreamingSetupV2
                 mStart = 59;
             }
 
-            string hhStart = Convert.ToString(hStart);
-            string mmStart = Convert.ToString(mStart);
-            string ssStart = Convert.ToString(sStart);
+            writeFile();
+        }
+
+        private void writeFile()
+        {
+            hhStart = Convert.ToString(hStart);
+            mmStart = Convert.ToString(mStart);
+            ssStart = Convert.ToString(sStart);
 
             if (hStart < 10)
             {
@@ -138,6 +151,7 @@ namespace StreamingSetupV2
             string correctString3 = correctString2.Replace("$s", Convert.ToString(sStart));
 
             StartLiveOutputTextBox.Text = correctString3;
+
             File.WriteAllText(@StartingCountdownFile + "/starting-countdown.txt", correctString3);
 
             StartTimeH.Value = hStart;

@@ -252,7 +252,7 @@
             this.HalfTimeM.TabStop = false;
             this.HalfTimeM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.HalfTimeM.Value = new decimal(new int[] {
-            12,
+            10,
             0,
             0,
             0});
@@ -265,11 +265,6 @@
             this.HalfTimeS.TabIndex = 0;
             this.HalfTimeS.TabStop = false;
             this.HalfTimeS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.HalfTimeS.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // halftimeTimer
             // 

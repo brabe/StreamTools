@@ -35,10 +35,10 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.liveScoreAlternative1 = new StreamingSetupV2.LiveScoreAlternative();
             this.halftimeCountdown1 = new StreamingSetupV2.HalftimeCountdown();
             this.startingSoonCountdown1 = new StreamingSetupV2.StartingSoonCountdown();
             this.StartingSoonCountdownControl = new StreamingSetupV2.StartingSoonCountdown();
+            this.openScoreboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,10 +47,11 @@
             this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.editToolStripMenuItem});
+            this.editToolStripMenuItem,
+            this.openScoreboardToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1390, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(798, 24);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -94,17 +95,9 @@
             // settingsToolStripMenuItem1
             // 
             this.settingsToolStripMenuItem1.Name = "settingsToolStripMenuItem1";
-            this.settingsToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
+            this.settingsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.settingsToolStripMenuItem1.Text = "Settings";
             this.settingsToolStripMenuItem1.Click += new System.EventHandler(this.settingsToolStripMenuItem1_Click);
-            // 
-            // liveScoreAlternative1
-            // 
-            this.liveScoreAlternative1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.liveScoreAlternative1.Location = new System.Drawing.Point(788, 27);
-            this.liveScoreAlternative1.Name = "liveScoreAlternative1";
-            this.liveScoreAlternative1.Size = new System.Drawing.Size(602, 407);
-            this.liveScoreAlternative1.TabIndex = 13;
             // 
             // halftimeCountdown1
             // 
@@ -133,6 +126,13 @@
             this.StartingSoonCountdownControl.Size = new System.Drawing.Size(383, 192);
             this.StartingSoonCountdownControl.TabIndex = 0;
             // 
+            // openScoreboardToolStripMenuItem
+            // 
+            this.openScoreboardToolStripMenuItem.Name = "openScoreboardToolStripMenuItem";
+            this.openScoreboardToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.openScoreboardToolStripMenuItem.Text = "Open Scoreboard";
+            this.openScoreboardToolStripMenuItem.Click += new System.EventHandler(this.openScoreboardToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -140,8 +140,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1390, 472);
-            this.Controls.Add(this.liveScoreAlternative1);
+            this.ClientSize = new System.Drawing.Size(798, 248);
             this.Controls.Add(this.halftimeCountdown1);
             this.Controls.Add(this.startingSoonCountdown1);
             this.Controls.Add(this.menuStrip1);
@@ -174,7 +173,7 @@
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem openOutputDirectoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private LiveScoreAlternative liveScoreAlternative1;
+        private System.Windows.Forms.ToolStripMenuItem openScoreboardToolStripMenuItem;
     }
 }
 

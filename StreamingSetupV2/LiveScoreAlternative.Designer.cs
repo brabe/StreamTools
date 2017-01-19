@@ -35,16 +35,12 @@
             this.resetGame = new System.Windows.Forms.Button();
             this.TimeClockM = new System.Windows.Forms.NumericUpDown();
             this.TimeClockS = new System.Windows.Forms.NumericUpDown();
-            this.button18 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.period2 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
             this.GamePeriod = new System.Windows.Forms.Label();
             this.KeyboardStatus = new System.Windows.Forms.Label();
-            this.button15 = new System.Windows.Forms.Button();
             this.period1 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -93,16 +89,12 @@
             this.scoreboardGroupBox.Controls.Add(this.resetGame);
             this.scoreboardGroupBox.Controls.Add(this.TimeClockM);
             this.scoreboardGroupBox.Controls.Add(this.TimeClockS);
-            this.scoreboardGroupBox.Controls.Add(this.button18);
             this.scoreboardGroupBox.Controls.Add(this.button14);
             this.scoreboardGroupBox.Controls.Add(this.button19);
             this.scoreboardGroupBox.Controls.Add(this.button13);
-            this.scoreboardGroupBox.Controls.Add(this.button16);
             this.scoreboardGroupBox.Controls.Add(this.period2);
-            this.scoreboardGroupBox.Controls.Add(this.button17);
             this.scoreboardGroupBox.Controls.Add(this.GamePeriod);
             this.scoreboardGroupBox.Controls.Add(this.KeyboardStatus);
-            this.scoreboardGroupBox.Controls.Add(this.button15);
             this.scoreboardGroupBox.Controls.Add(this.period1);
             this.scoreboardGroupBox.Controls.Add(this.button9);
             this.scoreboardGroupBox.Controls.Add(this.button6);
@@ -162,18 +154,6 @@
             this.TimeClockS.TabStop = false;
             this.TimeClockS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(340, 99);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(56, 28);
-            this.button18.TabIndex = 7;
-            this.button18.TabStop = false;
-            this.button18.Text = "-1";
-            this.toolTip.SetToolTip(this.button18, "K");
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
-            // 
             // button14
             // 
             this.button14.Location = new System.Drawing.Point(268, 99);
@@ -210,18 +190,6 @@
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(193, 99);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(56, 28);
-            this.button16.TabIndex = 7;
-            this.button16.TabStop = false;
-            this.button16.Text = "-1";
-            this.toolTip.SetToolTip(this.button16, "J");
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
-            // 
             // period2
             // 
             this.period2.Location = new System.Drawing.Point(77, 99);
@@ -233,18 +201,6 @@
             this.toolTip.SetToolTip(this.period2, "D1");
             this.period2.UseVisualStyleBackColor = true;
             this.period2.Click += new System.EventHandler(this.period2_Click);
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(340, 65);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(56, 28);
-            this.button17.TabIndex = 7;
-            this.button17.TabStop = false;
-            this.button17.Text = "+1";
-            this.toolTip.SetToolTip(this.button17, "I");
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // GamePeriod
             // 
@@ -269,18 +225,6 @@
             this.KeyboardStatus.TabIndex = 3;
             this.KeyboardStatus.Text = "Off";
             this.KeyboardStatus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(193, 65);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(56, 28);
-            this.button15.TabIndex = 7;
-            this.button15.TabStop = false;
-            this.button15.Text = "+1";
-            this.toolTip.SetToolTip(this.button15, "U");
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // period1
             // 
@@ -658,29 +602,16 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Timer scoreboardUpdate;
-        private System.Windows.Forms.Timer timeClock;
-        private System.Windows.Forms.GroupBox scoreboardGroupBox;
-        private System.Windows.Forms.Label GameTime;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel3;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         internal System.Windows.Forms.TextBox rightName;
-        private System.Windows.Forms.Label KeyboardStatus;
         internal System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         internal System.Windows.Forms.TextBox leftName;
         internal System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         internal System.Windows.Forms.Label label3;
         internal System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ToolTip toolTip;
-        private System.Windows.Forms.Label GamePeriod;
-        private System.Windows.Forms.NumericUpDown TimeClockS;
-        private System.Windows.Forms.NumericUpDown TimeClockM;
-        private System.Windows.Forms.NumericUpDown rightScoreText;
-        private System.Windows.Forms.NumericUpDown leftScoreText;
-        private System.Windows.Forms.Button resetGame;
         internal System.Windows.Forms.Button period2;
         internal System.Windows.Forms.Button period1;
         internal System.Windows.Forms.Button button9;
@@ -695,12 +626,20 @@
         internal System.Windows.Forms.Button button10;
         internal System.Windows.Forms.Button button2;
         internal System.Windows.Forms.Button button1;
-        internal System.Windows.Forms.Button button16;
-        internal System.Windows.Forms.Button button15;
-        internal System.Windows.Forms.Button button18;
-        internal System.Windows.Forms.Button button17;
         internal System.Windows.Forms.Button button14;
         internal System.Windows.Forms.Button button13;
         internal System.Windows.Forms.Button button19;
+        internal System.Windows.Forms.Timer scoreboardUpdate;
+        internal System.Windows.Forms.Timer timeClock;
+        internal System.Windows.Forms.GroupBox scoreboardGroupBox;
+        internal System.Windows.Forms.Label GameTime;
+        internal System.Windows.Forms.Label KeyboardStatus;
+        internal System.Windows.Forms.ToolTip toolTip;
+        internal System.Windows.Forms.Label GamePeriod;
+        internal System.Windows.Forms.NumericUpDown TimeClockS;
+        internal System.Windows.Forms.NumericUpDown TimeClockM;
+        internal System.Windows.Forms.NumericUpDown rightScoreText;
+        internal System.Windows.Forms.NumericUpDown leftScoreText;
+        internal System.Windows.Forms.Button resetGame;
     }
 }

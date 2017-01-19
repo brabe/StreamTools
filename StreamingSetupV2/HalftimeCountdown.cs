@@ -43,6 +43,9 @@ namespace StreamingSetupV2
                 sHalftime = Convert.ToInt32(HalfTimeS.Value);
 
                 HalfTimeStartButton2.Text = "Pause";
+
+                writeFile();
+
                 HalftimePause = 4;
             }
 
@@ -66,6 +69,9 @@ namespace StreamingSetupV2
                 sHalftime = Convert.ToInt32(HalfTimeS.Value);
 
                 HalfTimeStartButton2.Text = "Pause";
+
+                writeFile();
+
                 HalftimePause = 2;
             }
 
@@ -79,18 +85,21 @@ namespace StreamingSetupV2
         {
             halftimeTimer.Stop();
             hHalftime = 0;
-            mHalftime = 12;
-            sHalftime = 1;
+            mHalftime = 10;
+            sHalftime = 0;
 
             HalfTimeH.Value = Convert.ToDecimal(hHalftime);
             HalfTimeM.Value = Convert.ToDecimal(mHalftime);
             HalfTimeS.Value = Convert.ToDecimal(sHalftime);
 
-            HalftimeLiveOutputTextBox.Text = "";
+            HalftimeLiveOutputTextBox.Text = " ";
+
+            File.WriteAllText(@HalftimeCountdownFile + "/halftime-countdown.txt", HalftimeLiveOutputTextBox.Text);
 
             HalfTimeStartButton2.Text = "Start";
             HalftimePause = 1;
         }
+
         // Workings of Countdown Clock and Text Export
         private void halftimeTimer_Tick(object sender, EventArgs e)
         {
@@ -109,9 +118,21 @@ namespace StreamingSetupV2
                 mHalftime = 59;
             }
 
-            string hhHalftime = Convert.ToString(hHalftime);
-            string mmHalftime = Convert.ToString(mHalftime);
-            string ssHalftime = Convert.ToString(sHalftime);
+            writeFile();
+
+            if (hHalftime == 0 & mHalftime == 0 & sHalftime == 0)
+            {
+                halftimeTimer.Stop();
+                HalftimeLiveOutputTextBox.Text = HalftimeMsgTextBox.Text;
+                File.WriteAllText(@HalftimeCountdownFile + "/halftime-countdown.txt", HalftimeMsgTextBox.Text);
+            }
+        }
+
+        private void writeFile()
+        {
+            hhHalftime = Convert.ToString(hHalftime);
+            mmHalftime = Convert.ToString(mHalftime);
+            ssHalftime = Convert.ToString(sHalftime);
 
             if (hHalftime < 10)
             {
@@ -144,13 +165,6 @@ namespace StreamingSetupV2
             HalfTimeH.Value = hHalftime;
             HalfTimeM.Value = mHalftime;
             HalfTimeS.Value = sHalftime;
-
-            if (hHalftime == 0 & mHalftime == 0 & sHalftime == 0)
-            {
-                halftimeTimer.Stop();
-                HalftimeLiveOutputTextBox.Text = HalftimeMsgTextBox.Text;
-                File.WriteAllText(@HalftimeCountdownFile + "/halftime-countdown.txt", HalftimeMsgTextBox.Text);
-            }
         }
     }
 }

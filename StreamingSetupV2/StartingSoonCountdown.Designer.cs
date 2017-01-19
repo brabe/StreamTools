@@ -266,11 +266,6 @@
             this.StartTimeS.TabIndex = 0;
             this.StartTimeS.TabStop = false;
             this.StartTimeS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.StartTimeS.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // startingSoonTimer
             // 
